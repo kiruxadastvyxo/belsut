@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#rand").click(function () {
+                let randNum = Math.floor(Math.random() * (6 - 1) + 1);
+                $(".random").text(`${randNum}`);
+                $(`#div${randNum}`).fadeIn(3000);
+            });
+            $("#hide").click(function() {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut();
+                $("#div3").fadeOut();
+                $("#div4").fadeOut();
+                $("#div5").fadeOut();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="rand">Random Number</button>
+    <h1 class="random"></h1>
+        <button id="hide">Hide</button>
+    <br><br>
+    <div id="div1" style="display: none;">
+        <p>text frst div</p>
+    </div>
+    <div id="div2" style="display: none;">
+        <p>text scnd div</p>
+    </div>
+    <div id="div3" style="display: none;">
+        <p>text thrd div</p>
+    </div>
+    <div id="div4" style="display: none;">
+        <p>text frth div</p>
+    </div>
+    <div id="div5" style="display: none;">
+        <p>text fifth div</p>
+    </div>
+</body>
+
+</html>

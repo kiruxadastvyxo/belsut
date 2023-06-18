@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+        $("button").click(function () {
+            var images = $('img:odd');
+            images.forEach(function(){
+                $(this).slideUp("slow");
+            })
+        });
+ });
+
+    </script>
+</head>
+<body>
+    <button>Click</button>
+    <br>
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+    <br>
+    <img src="./photo-1508919801845-fc2ae1bc2a28.jpg" alt="img" height="50px">
+</body>
+</html>
